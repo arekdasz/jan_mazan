@@ -1,0 +1,20 @@
+.site-footer {
+  background-color: $gray-background-color;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  font-weight: bold;
+}
