@@ -25,6 +25,9 @@ jobs:
         lftp -f "
         open $FTP_HOST
         user $FTP_USERNAME $FTP_PASSWORD
-        mirror -R --delete --verbose ./ /public_html/autoinstalator/dev.jan-mazan.develoart.pl/wordpress82323/wp-content/themes/jan_mazan
+        mirror -R --delete --verbose \
+        --exclude \".git*\" \
+        --exclude \".github*\" \
+        ./ /dev.jan-mazan.develoart.pl/wordpress82323/wp-content/themes/jan_mazan
         bye
         "
