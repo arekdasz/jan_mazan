@@ -13,7 +13,13 @@
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'my-theme'); ?></a>
-
+		<section>
+			<ul class="header-contact">
+				<li class="header-contact-item"><span class="header-contact-title">TELEFON:</span> <?php the_field('phone_number'); ?></li>
+				<li class="header-contact-item"><span class="header-contact-title">KOMÓRKA:</span> <?php the_field('mobile_number'); ?></li>
+				<li class="header-contact-item"><span class="header-contact-title">E-MAIL:</span> <?php the_field('email_address'); ?></li>
+			</ul>
+		</section>
 		<header id="masthead" class="site-header">
 			<div class="site-branding-navigation">
 				<div class="site-branding">
@@ -31,7 +37,7 @@
 					$my_theme_description = get_bloginfo('description', 'display');
 					if ($my_theme_description || is_customize_preview()) :
 					?>
-						<p class="site-description"><?php echo $my_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+						<p class="site-description"><?php echo $my_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 													?></p>
 					<?php endif; ?>
 				</div><!-- .site-branding -->
