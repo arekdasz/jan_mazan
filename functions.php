@@ -64,13 +64,6 @@ function get_button_template_part()
 	return ob_get_clean();
 }
 
-// Shortcode do wywołania template part
-function button_template_part_shortcode()
-{
-	return get_button_template_part();
-}
-add_shortcode('button_template_part', 'button_template_part_shortcode');
-
 // Enqueue styles
 function my_theme_enqueue_styles()
 {
