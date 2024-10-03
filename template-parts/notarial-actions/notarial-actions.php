@@ -1,6 +1,6 @@
 <?php
-// Dołącz plik z funkcją renderującą przycisk
-require get_template_directory() . '/template-parts/Buttons/button.php';
+
+require get_template_directory() . '/template-parts/buttons/button.php';
 ?>
 
 <div class="notarial-container">
