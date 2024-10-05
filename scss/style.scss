@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@400;700&display=swap');
 @import 'variables';
 @import 'header/navigation';
 @import 'header/contact';
@@ -108,17 +109,22 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
+  font-family: 'Montagu Slab', serif;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -126,6 +132,7 @@ q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
