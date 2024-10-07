@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .custom-button {
     display: inline-block;
     width: 180px;
@@ -17,4 +18,25 @@
 
 .custom-button:hover {
     background-color: #333;
+=======
+.custom-button {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em; /* Zmniejsz rozmiar czcionki */
+    font-weight: bold;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Upewnij się, że padding nie wpływa na wymiary przycisku */
+}
+
+.custom-button:hover {
+    background-color: #333;
+>>>>>>> 24d26882094ae9e2f5f80f46cb35df32cd974ef9
 }
