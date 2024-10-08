@@ -1,7 +1,7 @@
 <?php
 // Pobierz wartości z ACF
-$title = get_field('title');
-$content = get_field('content');
+$title = get_field('charge_title');
+$content = get_field('charge_content');
 // $button_text = get_field('button_text');
 // $button_url = get_field('button_url');
 ?>
