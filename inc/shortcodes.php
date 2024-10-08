@@ -15,3 +15,11 @@ function notarial_actions_shortcode()
     return ob_get_clean();
 }
 add_shortcode('notarial_actions', 'notarial_actions_shortcode');
+
+function charge_shortcode()
+{
+    ob_start();
+    get_template_part('template-parts/charge/charge');
+    return ob_get_clean();
+}
+add_shortcode('charge', 'charge_shortcode');
