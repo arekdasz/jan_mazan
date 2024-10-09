@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
 .site-branding-navigation {
   background-color: #d9d9d9;
   display: flex;
@@ -264,7 +266,7 @@
 .custom-button {
   background-color: #000;
   color: #fff;
-  padding: 10px 20px;
+  padding: 0;
   border: none;
   cursor: pointer;
   font-size: 1rem;
@@ -363,6 +365,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Montserrat';
 }
 
 article,
