@@ -1,10 +1,13 @@
 .contact-section {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    gap: 20px;
+    padding: 90px 0;
+    background-color: #f9f9f9;
+
 
     .contact-text,
     .contact-form-section {

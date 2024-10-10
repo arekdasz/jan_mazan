@@ -29,10 +29,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" id="name" name="name" required>
         <input type="email" id="email" name="email" required>
         <textarea id="message" name="message" required></textarea>
-        <label for="consent">
-            <input type="checkbox" id="consent" name="consent">
-            Wyrażam zgodę na przetwarzanie moich danych.
-        </label>
-        <input type="submit" value="Wyślij" class="custom-button">
+
+        <div class="form-actions">
+            <label for="consent">
+                <input type="checkbox" id="consent" name="consent">
+                Wyrażam zgodę na przetwarzanie moich danych.
+            </label>
+            <input type="submit" value="Wyślij" class="custom-button">
+        </div>
     </form>
 </div>

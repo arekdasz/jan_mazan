@@ -1,22 +1,57 @@
 .contact-form-section {
-    display: flex;
-    flex-direction: column; // Ensure the form and footer stack vertically
-    align-items: center;
-    justify-content: center;
-
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
-        // Add styles for input fields to be full width
+        margin-top: 50px;
+
         input[type="text"],
         input[type="email"],
         textarea {
             width: 100%;
-            max-width: 400px; // Optional: set a max width
-            margin-bottom: 10px; // Optional: add some space between fields
+            max-width: 400px;
+            height: 40px;
+            margin-bottom: 10px;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: auto;
+            min-height: 380px;
+        }
+
+        .form-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+
+            label {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                max-width: 200px;
+                line-height: 1.2;
+            }
+
+            input[type="checkbox"] {
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                background-color: #f2f2f2;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s, border-color 0.3s;
+                flex-shrink: 0;
+
+                &:checked {
+                    background-color: #ccc;
+                }
+            }
         }
     }
 }
