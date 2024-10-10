@@ -19,10 +19,6 @@
   "devDependencies": {
     "@wordpress/scripts": "^19.2.2",
     "dir-archiver": "^1.1.1",
-<<<<<<< HEAD
-    "node-sass": "^7.0.1",
-=======
->>>>>>> e11e26e0fdf2f3a9f3130d5a8af8112c8852b339
     "rtlcss": "^3.5.0",
     "sass": "^1.79.4"
   },
@@ -40,11 +36,7 @@
     "map": false
   },
   "scripts": {
-<<<<<<< HEAD
     "watch": "sass --watch scss/style.scss:style/style.css",
-=======
-    "watch": "npx sass --watch scss:./ --source-map --style=expanded",
->>>>>>> e11e26e0fdf2f3a9f3130d5a8af8112c8852b339
     "compile:css": "node-sass sass/ -o ./ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
     "compile:rtl": "rtlcss style.css style-rtl.css",
     "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
