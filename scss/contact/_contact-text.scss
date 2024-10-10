@@ -1,0 +1,25 @@
+.contact-text {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f91b1b;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+    }
+}

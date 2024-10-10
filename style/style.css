@@ -161,8 +161,9 @@
   max-width: 480px;
 }
 .about-me-section .about-me-text h2 {
-  font-size: 2em;
+  font-size: 40px;
   margin-bottom: 0.5em;
+  font-weight: 400;
 }
 .about-me-section .about-me-text p {
   font-size: 1em;
@@ -178,7 +179,9 @@
 }
 
 .custom-button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 180px;
   height: 40px;
   background-color: #000000;
@@ -199,9 +202,10 @@
 }
 
 .notarial-container {
-  max-width: 1180px;
+  width: 100%;
   margin: 0 auto;
   padding: 60px 0;
+  background-color: #ffffff;
 }
 
 .notarial-title {
@@ -219,6 +223,9 @@
 }
 
 .action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   box-sizing: border-box;
 }
@@ -244,36 +251,104 @@
 
 .charge-section {
   background-color: #e6e6e6;
-  padding: 40px;
   text-align: left;
-  max-width: 600px;
+  width: 100%;
   margin: 0 auto;
+}
+.charge-section .charge-section-content {
+  max-width: 480px;
+  padding: 90px;
 }
 .charge-section h2 {
   font-size: 2.5rem;
-  font-weight: bold;
   margin-bottom: 20px;
 }
 .charge-section p {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
-  text-decoration: underline;
 }
 
-.custom-button {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  text-transform: uppercase;
-  display: inline-block;
-  text-align: center;
+.documents-section {
+  background-color: #ffffff;
+  padding: 120px 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.custom-button:hover {
-  background-color: #333;
+.documents-section .documents-section-content {
+  max-width: 780px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.documents-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.documents-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+.contact-section .contact-text,
+.contact-section .contact-form-section {
+  flex: 1;
+}
+
+.contact-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-form-section form input[type=text],
+.contact-form-section form input[type=email],
+.contact-form-section form textarea {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+.contact-text {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f91b1b;
+}
+.contact-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contact-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.contact-text img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 html,
