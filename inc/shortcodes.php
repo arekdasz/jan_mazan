@@ -23,3 +23,19 @@ function charge_shortcode()
     return ob_get_clean();
 }
 add_shortcode('charge', 'charge_shortcode');
+
+function section_documents_shortcode()
+{
+    ob_start();
+    get_template_part('template-parts/section-documents/section-documents');
+    return ob_get_clean();
+}
+add_shortcode('section_documents', 'section_documents_shortcode');
+
+function contact_section_shortcode()
+{
+    ob_start();
+    get_template_part('template-parts/contact-section/contact-section');
+    return ob_get_clean();
+}
+add_shortcode('contact_section', 'contact_section_shortcode');
