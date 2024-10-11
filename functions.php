@@ -69,5 +69,6 @@ function my_theme_enqueue_styles()
 {
 	wp_enqueue_style('my-theme-style', get_stylesheet_uri());
 	wp_enqueue_style('about-me-style', get_template_directory_uri() . '/dist/bundle.css');
+	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
