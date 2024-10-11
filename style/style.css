@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
 .site-branding-navigation {
   background-color: #d9d9d9;
   display: flex;
@@ -352,9 +354,6 @@
   background-color: #f2f2f2;
   border: 2px solid #ccc;
   border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s, border-color 0.3s;
-  flex-shrink: 0;
 }
 .contact-form-section form .form-actions input[type=checkbox]:checked {
   background-color: #ccc;
@@ -469,6 +468,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'Montserrat';
 }
 
 article,
