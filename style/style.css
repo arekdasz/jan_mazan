@@ -161,8 +161,9 @@
   max-width: 480px;
 }
 .about-me-section .about-me-text h2 {
-  font-size: 2em;
+  font-size: 40px;
   margin-bottom: 0.5em;
+  font-weight: 400;
 }
 .about-me-section .about-me-text p {
   font-size: 1em;
@@ -178,7 +179,9 @@
 }
 
 .custom-button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 180px;
   height: 40px;
   background-color: #000000;
@@ -199,9 +202,10 @@
 }
 
 .notarial-container {
-  max-width: 1180px;
+  width: 100%;
   margin: 0 auto;
   padding: 60px 0;
+  background-color: #ffffff;
 }
 
 .notarial-title {
@@ -219,6 +223,9 @@
 }
 
 .action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   box-sizing: border-box;
 }
@@ -240,6 +247,139 @@
 .title {
   font-size: 1em;
   margin-bottom: 10px;
+}
+
+.charge-section {
+  background-color: #e6e6e6;
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+}
+.charge-section .charge-section-content {
+  max-width: 480px;
+  padding: 90px;
+}
+.charge-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.charge-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.documents-section {
+  background-color: #ffffff;
+  padding: 120px 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.documents-section .documents-section-content {
+  max-width: 780px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.documents-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.documents-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+  padding: 90px 0;
+  background-color: #f9f9f9;
+}
+.contact-section .contact-text,
+.contact-section .contact-form-section {
+  flex: 1;
+}
+
+.contact-form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.contact-form-section form input[type=text],
+.contact-form-section form input[type=email],
+.contact-form-section form textarea {
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.contact-form-section form textarea {
+  height: auto;
+  min-height: 380px;
+}
+.contact-form-section form .form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.contact-form-section form .form-actions label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 200px;
+  line-height: 1.2;
+}
+.contact-form-section form .form-actions input[type=checkbox] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #f2f2f2;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  flex-shrink: 0;
+}
+.contact-form-section form .form-actions input[type=checkbox]:checked {
+  background-color: #ccc;
+}
+
+.contact-text {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-left: 220px;
+}
+.contact-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contact-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.contact-text img {
+  width: 100%;
+  max-width: 480px;
+  height: 380px;
+  display: block;
+  border-radius: 8px;
 }
 
 html,
