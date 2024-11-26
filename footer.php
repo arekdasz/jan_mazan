@@ -11,7 +11,7 @@
  */
 
 ?>
-
+<!-- test -->
 <footer id="colophon" class="site-footer">
 	<h2 class="footer-heading">Dane Kontaktowe</h2>
 	<ul class="footer-contact">
