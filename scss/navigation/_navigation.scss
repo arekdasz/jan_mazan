@@ -1,138 +1,97 @@
-.site-branding-navigation {
-    background-color: $primary;
+.site-header {
+  background-color: #222;
+  border-bottom: 1px solid #444;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 28px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 1rem;
-  
-    .site-branding {
+  }
+
+  .site-branding {
+    .site-logo {
+      width: 100px;
+      height: auto;
+    }
+  }
+
+  .main-navigation {
+    .menu {
       display: flex;
-      flex-direction: column;
-  
-      .site-title {
-        margin: 0;
-        font-size: $font-size-large;
-  
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      gap: 5rem;
+
+      > li {
+        position: relative;
+
         a {
           text-decoration: none;
-          color: $secondary;
-        }
-      }
-  
-      .site-description {
-        margin: 0;
-        font-size: $font-size-base;
-      }
-    }
-  
-    .main-navigation {
-      display: flex;
-      align-items: center;
-  
-      .menu-toggle {
-        display: none;
-      }
-  
-      .menu {
-        display: flex;
-        list-style: none;
-        gap: 4rem;
-        margin: 0;
-  
-        > li {
-          font-weight: bold;
+          color: #fff;
           text-transform: uppercase;
-          position: relative;
-  
-          a {
-            text-decoration: none;
-            color: $secondary;
-            font-weight: 300;
-            font-size: 16px;
-  
-            &:hover {
-              color: $secondary;
-            }
+          font-size: 16px;
+          font-weight: 300;
+          font-family: 'Montserrat';
+          transition: color 0.3s;
+
+          &:hover {
+            color: #f0f0f0;
           }
-  
-          ul {
+        }
+
+        &.menu-item-has-children {
+          > a::after {
+            content: '▼';
+            font-size: 10px;
+            margin-left: 8px;
+            color: #fff;
+            transition: transform 0.3s;
+          }
+
+          &:hover > a::after {
+            transform: rotate(180deg);
+          }
+
+          .sub-menu {
             display: none;
             position: absolute;
-            top: 100%;
-            left: 0;
+            background-color: #222;
             list-style: none;
             margin: 0;
             padding: 0;
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  
+            top: 100%;
+            left: -20px;
+            width: 250px;
+            z-index: 1000;
+
             li {
-              width: 100%;
-  
+              border-bottom: 1px solid #ffffff;
+              padding: 0;
+
               a {
                 display: block;
-                width: 100%;
-                padding: $padding-base;
                 text-align: left;
-                font-weight: 300;
-                font-size: 16px;
+                padding: 26px 10px;
+                text-decoration: none;
+                color: #fff;
+                font-size: 14px;
               }
             }
+
+            li:last-child {
+              border-bottom: none;
+            }
           }
-  
-          &:hover > ul {
+
+          &:hover > .sub-menu {
             display: block;
           }
         }
       }
     }
   }
-  
-  // Responsive styles
-  @media (max-width: 768px) {
-    .site-branding-navigation {
-      flex-direction: column;
-      align-items: flex-start;
-  
-      .main-navigation {
-        width: 100%;
-  
-        .menu-toggle {
-          display: block;
-          background: none;
-          border: none;
-          font-size: 1.5rem;
-          cursor: pointer;
-          margin-bottom: 1rem;
-        }
-  
-        .menu {
-          flex-direction: column;
-          width: 100%;
-  
-          > li {
-            margin-left: 0;
-            width: 100%;
-  
-            a {
-              display: block;
-              width: 100%;
-              padding: 1rem;
-              text-align: left;
-            }
-  
-            ul {
-              position: static;
-              box-shadow: none;
-  
-              li {
-                a {
-                  padding: 1rem;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+}

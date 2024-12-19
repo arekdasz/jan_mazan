@@ -27,7 +27,7 @@
 			</ul>
 		</div>
 		<div class="footer-copyright">
-			<p>COPYRIGHT © <?php echo date('Y'); ?> <?php the_field('footer_copyright_name'); ?></p>
+			<p>Copyright © 2024 Jan maria Mazan</p>
 		</div>
 	</footer>
 </div>
