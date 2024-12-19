@@ -9,58 +9,58 @@ require get_template_directory() . '/template-parts/buttons/button.php';
     <div class="notarial-actions">
         <div class="action-item">
             <div class="icon">
-                <img src="path/to/icon1.png" alt="NIERUCHOMOŚCI">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/nieruchomosci.svg" alt=" NIERUCHOMOŚCI">
             </div>
-            <div class="title">NIERUCHOMOŚCI</div>
+            <div class="title">Nieruchomości</div>
             <?php render_custom_button('WIĘCEJ', '#'); ?>
         </div>
         <div class="action-item">
             <div class="icon">
-                <img src="path/to/icon2.png" alt="NAJEM OKAZJONALNY">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/najem.svg" alt="NIERUCHOMOŚCI">
             </div>
-            <div class="title">NAJEM OKAZJONALNY</div>
+            <div class="title">Najem okazjonalny</div>
             <?php render_custom_button('WIĘCEJ', '#'); ?>
         </div>
         <div class="action-item">
             <div class="icon">
-                <img src="path/to/icon3.png" alt="PRAWO SPÓŁEK">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/spolki.svg" alt="NIERUCHOMOŚCI">
             </div>
-            <div class="title">PRAWO SPÓŁEK</div>
+            <div class="title">Prawo spółek</div>
             <?php render_custom_button('WIĘCEJ', '#'); ?>
         </div>
         <div class="action-item">
             <div class="icon">
-                <img src="path/to/icon4.png" alt="SPRAWY MAŁŻEŃSKIE">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/malzenskie.svg" alt="NIERUCHOMOŚCI">
             </div>
-            <div class="title">SPRAWY MAŁŻEŃSKIE</div>
+            <div class="title">Sprawy małżeńskie</div>
             <?php render_custom_button('WIĘCEJ', '#'); ?>
         </div>
         <div class="action-item">
             <div class="icon">
-                <img src="path/to/icon5.png" alt="PEŁNOMOCNICTWA">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/pelnomocnictwa.svg" alt="NIERUCHOMOŚCI">
             </div>
-            <div class="title">PEŁNOMOCNICTWA</div>
+            <div class="title">Pełnomocnictwa</div>
             <?php render_custom_button('WIĘCEJ', '#'); ?>
         </div>
         <div class="action-item">
             <div class="icon">
-                <img src="path/to/icon6.png" alt="SPADKI">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/spadki.svg" alt="NIERUCHOMOŚCI">
             </div>
-            <div class="title">SPADKI</div>
+            <div class="title">Spadki</div>
             <?php render_custom_button('WIĘCEJ', '#'); ?>
         </div>
         <div class="action-item">
             <div class="icon">
-                <img src="path/to/icon7.png" alt="DEPOZYT NOTARIALNY">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/depozyt.svg" alt="NIERUCHOMOŚCI">
             </div>
-            <div class="title">DEPOZYT NOTARIALNY</div>
+            <div class="title">Depozyt notarialny</div>
             <?php render_custom_button('WIĘCEJ', '#'); ?>
         </div>
         <div class="action-item">
             <div class="icon">
-                <img src="path/to/icon8.png" alt="POŚWIADCZENIA">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/poswiadczenie.svg" alt="NIERUCHOMOŚCI">
             </div>
-            <div class="title">POŚWIADCZENIA</div>
+            <div class="title">Poświadczenia</div>
             <?php render_custom_button('WIĘCEJ', '#'); ?>
         </div>
     </div>

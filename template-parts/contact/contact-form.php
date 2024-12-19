@@ -22,18 +22,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php get_header(); ?>
-
 <div class="contact-form-section">
     <form method="post" action="">
-        <input type="text" id="name" name="name" required>
-        <input type="email" id="email" name="email" required>
-        <textarea id="message" name="message" required></textarea>
+        <input type="text" id="name" name="name" placeholder="Twoje imię" required>
+        <input type="email" id="email" name="email" placeholder="Twój adres e-mail" required>
+        <input type="text" id="temat" name="temat" placeholder="Temat wiadomości" required>
+        <textarea id="message" name="message" placeholder="Twoja wiadomość" required></textarea>
 
         <div class="form-actions">
             <label for="consent">
                 <input type="checkbox" id="consent" name="consent">
-                Wyrażam zgodę na przetwarzanie moich danych.
+                <span>Wyrażam zgodę na przetwarzanie moich danych.</span>
             </label>
             <input type="submit" value="Wyślij" class="custom-button">
         </div>

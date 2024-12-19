@@ -1,0 +1,44 @@
+.header-contact {
+  background-color: $dark-blue;
+  padding: 1.5rem 0;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .header-contact-item {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+
+    li {
+      color: $secondary;
+      font-size: 17px;
+      font-weight: 700;
+      
+      .header-contact-title {
+        color: $secondary;
+        font-size: 16px;
+        font-weight: 700;
+        margin-right: 0.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

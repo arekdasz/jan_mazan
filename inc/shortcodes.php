@@ -39,3 +39,11 @@ function contact_section_shortcode()
     return ob_get_clean();
 }
 add_shortcode('contact_section', 'contact_section_shortcode');
+
+function hero_section_shortcode()
+{
+    ob_start();
+    get_template_part('template-parts/hero/hero');
+    return ob_get_clean();
+}
+add_shortcode('hero_section', 'hero_section_shortcode');

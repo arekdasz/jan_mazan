@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 112px 230px;
-    background-color: #f9f9f9;
+    background-color: $primary;
+    color: $secondary;
 
     .about-me-text {
         flex: 1;
@@ -13,22 +14,19 @@
         h2 {
             font-size: 40px;
             margin-bottom: 0.5em;
-            font-weight: 400;
+            font-weight: 700;
+            font-family: 'EB Garamond';
         }
 
         p {
-            font-size: 1em;
-            line-height: 1.5;
+            font-size: 16px;
+            font-weight: 400;
+            white-space: pre-wrap; /* Zachowuje spacje i nowe linie */
         }
     }
 
     .about-me-image {
         flex: 0 0 360px;
         margin-left: 100px;
-
-        img {
-            width: 380px;
-            height: 380px;
-        }
     }
 }
