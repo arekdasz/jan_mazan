@@ -1,0 +1,20 @@
+.header-contact {
+  padding: 1.5rem 0;
+  list-style: none;
+  width: 100%;
+  background-color: $blue;
+  
+  .header-contact-item {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+.header-contact-title {
+  color: $secondary;
+}

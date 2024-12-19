@@ -1,25 +1,49 @@
+$placeholder-color: #888888;
+$placeholder-focus-color: #ffffff;
+$border-radius: 20px;
+$input-height: 54px;
+$textarea-min-height: 222px;
+
 .contact-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 480px;
+
     form {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 50px;
+        width: 100%;
 
         input[type="text"],
         input[type="email"],
         textarea {
             width: 100%;
-            max-width: 400px;
-            height: 40px;
+            height: $input-height;
             margin-bottom: 10px;
-            padding: 0 10px;
+            padding: 20px;
+            border-radius: $border-radius;
             box-sizing: border-box;
+
+            &::placeholder {
+                color: $placeholder-color;
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            &:focus::placeholder {
+                color: $placeholder-focus-color;
+            }
         }
 
         textarea {
             height: auto;
-            min-height: 380px;
+            min-height: $textarea-min-height;
+            line-height: 1.5;
+            resize: vertical;
         }
 
         .form-actions {
@@ -28,13 +52,19 @@
             justify-content: center;
             gap: 10px;
             margin-top: 10px;
+            height: 44px;
+            width: 100%;
 
             label {
                 display: flex;
                 align-items: center;
                 gap: 5px;
-                max-width: 200px;
-                line-height: 1.2;
+
+                span {
+                    font-weight: 400;
+                    font-family: 'Montserrat';
+                    width: 244px;
+                }
             }
 
             input[type="checkbox"] {
@@ -46,7 +76,6 @@
                 border-radius: 4px;
                 cursor: pointer;
                 transition: background-color 0.3s, border-color 0.3s;
-                flex-shrink: 0;
 
                 &:checked {
                     background-color: #ccc;

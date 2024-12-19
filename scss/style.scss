@@ -1,6 +1,6 @@
 @import 'variables';
-@import 'header/navigation';
-@import 'header/contact';
+@import 'navigation/navigation';
+@import 'navigation/contact';
 @import 'footer/footer';
 @import 'about/aboutMe';
 @import 'button/customButton';
@@ -10,6 +10,8 @@
 @import 'contact/contact-section';
 @import 'contact/contact-form';
 @import 'contact/contact-text';
+@import 'hero/hero';
+
 body {
   background-color: $primary;
   font-family: 'Montserrat', sans-serif;
