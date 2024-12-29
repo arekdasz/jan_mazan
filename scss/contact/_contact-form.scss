@@ -9,7 +9,7 @@ $textarea-min-height: 222px;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
-    width: 480px;
+    width: 600px;
 
     form {
         display: flex;
@@ -27,7 +27,10 @@ $textarea-min-height: 222px;
             padding: 20px;
             border-radius: $border-radius;
             box-sizing: border-box;
-
+            border: none;
+            &:focus {
+                outline: none;
+            }
             &::placeholder {
                 color: $placeholder-color;
                 font-size: 20px;
@@ -78,28 +81,32 @@ $textarea-min-height: 222px;
                 position: relative;
                 cursor: pointer;
                 transition: background-color 0.3s, border-color 0.3s;
-
+            
                 &::before {
-                    content: '';
+                    content: '✔';
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    width: 12px;
-                    height: 12px;
-                    background-color: transparent;
-                    border-radius: 2px;
-                    transition: background-color 0.3s;
+                    font-size: 20px;
+                    color: transparent;
+                    transition: color 0.3s;
                 }
-
+            
                 &:checked {
                     background-color: $blue;
-
+                    border-color: $blue;
+            
                     &::before {
-                        background-color: $blue;
+                        color: #fff;
                     }
                 }
+            
+                &:hover {
+                    border-color: darken($blue, 10%);
+                }
             }
+            
         }
     }
 }

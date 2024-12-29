@@ -2,10 +2,9 @@
     background-color: $dark-blue;
     color: $secondary;
     width: 100%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 
 
     .charge-section-content {
@@ -51,8 +50,6 @@
         line-height: 1.5;
         margin-bottom: 20px;
     }
-
-    /* Responsywność */
     @media (max-width: 768px) {
         flex-direction: column;
 

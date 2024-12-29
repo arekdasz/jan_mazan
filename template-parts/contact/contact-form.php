@@ -1,15 +1,10 @@
 <?php
-/*
-Template Name: Contact Form
-*/
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = sanitize_text_field($_POST['name']);
     $email = sanitize_email($_POST['email']);
     $message = sanitize_textarea_field($_POST['message']);
     $consent = isset($_POST['consent']) ? 'Yes' : 'No';
 
-    // Send email
     $to = get_option('admin_email');
     $subject = 'New Contact Form Submission';
     $headers = 'From: ' . $email;

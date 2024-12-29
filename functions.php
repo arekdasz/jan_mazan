@@ -8,7 +8,6 @@
 
 // Include required files from the `inc` folder
 require get_template_directory() . '/inc/enqueue-scripts.php';
-require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/shortcodes.php'; // Include shortcodes
@@ -73,7 +72,7 @@ function my_theme_enqueue_styles()
 	wp_enqueue_style('about-me-style', get_template_directory_uri() . '/dist/bundle.css');
 
 	// Enqueue custom styles from `styles` folder
-	wp_enqueue_style('custom-style', get_template_directory_uri() . '/styles/style.css');
+	wp_enqueue_style('custom-style', get_template_directory_uri() . '/style/style.css');
 
 	// Enqueue Google Fonts
 	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap', array(), null);
