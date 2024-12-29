@@ -15,10 +15,13 @@
     .site-logo {
       width: 100px;
       height: auto;
+      margin-left: 40px;
     }
   }
 
   .main-navigation {
+    margin-right: 40px;
+
     .menu {
       display: flex;
       list-style: none;
@@ -57,7 +60,7 @@
           }
 
           .sub-menu {
-            display: none;
+            display: block;
             position: absolute;
             background-color: #222;
             list-style: none;
@@ -67,6 +70,12 @@
             left: -20px;
             width: 250px;
             z-index: 1000;
+
+            /* Ukrycie na start */
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
 
             li {
               border-bottom: 1px solid #ffffff;
@@ -88,7 +97,9 @@
           }
 
           &:hover > .sub-menu {
-            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
           }
         }
       }

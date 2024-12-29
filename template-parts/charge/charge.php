@@ -4,7 +4,7 @@ if (function_exists('get_field')) :
     $description = get_field('charge_description');
     $button_text = get_field('charge_button_text');
     $button_url = get_field('charge_button_url');
-    $image = get_field('charge_image'); // Pobranie obrazu z ACF
+    $image = get_field('charge_image');
 ?>
 
     <div class="charge-section">

@@ -1,12 +1,17 @@
 .documents-section {
     background-color: $primary;
-    padding: 120px 0;
+    padding: 122px 0;
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $secondary;
+    
+    button{
+        max-width: 220px;
+        align-self: center;
+    }
     .documents-section-content {
         max-width: 780px;
         text-align: center;
