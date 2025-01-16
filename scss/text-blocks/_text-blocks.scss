@@ -1,0 +1,35 @@
+.text-block {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $secondary;
+  padding: 70px 0;
+  font-family: 'Montserrat', sans-serif;
+
+  &.grey-background {
+      background-color: $primary;
+  }
+
+  &.blue-background {
+      background-color: $dark-blue; 
+  }
+
+  .text-block-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 15px;
+  }
+
+
+  .text-block-content {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.8;
+      max-width: 700px;
+  }
+
+  &.first-block {
+      padding-top: 200px;
+  }
+}
