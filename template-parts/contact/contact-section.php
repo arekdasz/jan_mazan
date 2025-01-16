@@ -1,4 +1,4 @@
 <div class="contact-section">
-    <?php include 'contact-text.php'; ?>
-    <?php include 'contact-form.php'; ?>
+    <?php get_template_part('template-parts/contact/contact-text', null, []); ?>
+    <?php get_template_part('template-parts/contact/contact-form', null, []); ?>
 </div>
