@@ -1,0 +1,112 @@
+$placeholder-color: #888888;
+$placeholder-focus-color: #ffffff;
+$border-radius: 20px;
+$input-height: 54px;
+$textarea-min-height: 222px;
+
+.contact-form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 600px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            height: $input-height;
+            margin-bottom: 10px;
+            padding: 20px;
+            border-radius: $border-radius;
+            box-sizing: border-box;
+            border: none;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                color: $placeholder-color;
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            &:focus::placeholder {
+                color: $placeholder-focus-color;
+            }
+        }
+
+        textarea {
+            height: auto;
+            min-height: $textarea-min-height;
+            line-height: 1.5;
+            resize: vertical;
+        }
+
+        .form-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            height: 44px;
+            width: 100%;
+
+            label {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                span {
+                    font-weight: 400;
+                    font-size: 16px;
+                    font-family: 'Montserrat';
+                    width: 244px;
+                }
+            }
+
+            input[type="checkbox"] {
+                appearance: none;
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+                border: 3px solid #ccc;
+                border-radius: 10px;
+                position: relative;
+                cursor: pointer;
+                transition: background-color 0.3s, border-color 0.3s;
+            
+                &::before {
+                    content: '✔';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 20px;
+                    color: transparent;
+                    transition: color 0.3s;
+                }
+            
+                &:checked {
+                    background-color: $blue;
+                    border-color: $blue;
+            
+                    &::before {
+                        color: #fff;
+                    }
+                }
+            
+                &:hover {
+                    border-color: darken($blue, 10%);
+                }
+            }
+            
+        }
+    }
+}

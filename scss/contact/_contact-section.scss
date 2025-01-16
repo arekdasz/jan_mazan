@@ -1,0 +1,10 @@
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 76px 0;
+    gap: 20px;
+    background-color: $dark-blue;
+    color: $secondary;
+}
