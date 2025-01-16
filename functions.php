@@ -5,7 +5,7 @@ function my_theme_setup()
 	add_theme_support('editor-styles');
 	add_theme_support('wp-block-styles');
 	add_theme_support('align-wide');
-	add_theme_support('responsive-embeds');
+	add_theme_support('	sponsive-embeds');
 	add_editor_style('style-editor.css');
 	register_nav_menus(
 		array(
@@ -31,13 +31,8 @@ if (function_exists('acf_add_options_page')) {
 		'redirect'      => false,
 	));
 }
+require_once get_template_directory() . '/template-parts/buttons/button.php';
 
-function get_button_template_part()
-{
-	ob_start();
-	get_template_part('template-parts/button');
-	return ob_get_clean();
-}
 function set_default_template_for_oplaty($post_id, $post, $update)
 {
 	if ($post->post_type == 'page' && $post->post_title == 'Opłaty') {
@@ -45,7 +40,6 @@ function set_default_template_for_oplaty($post_id, $post, $update)
 	}
 }
 add_action('save_post', 'set_default_template_for_oplaty', 10, 3);
-
 function my_theme_enqueue_styles()
 {
 	wp_enqueue_style('my-theme-style', get_stylesheet_uri());
