@@ -1,5 +1,10 @@
 <?php
-
+require_once get_template_directory() . '/inc/template-pages.php';
+require_once get_template_directory() . '/template-parts/buttons/button.php';
+require get_template_directory() . '/inc/enqueue-scripts.php';
+require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/shortcodes.php';
 function my_theme_setup()
 {
 	add_theme_support('editor-styles');
@@ -31,15 +36,7 @@ if (function_exists('acf_add_options_page')) {
 		'redirect'      => false,
 	));
 }
-require_once get_template_directory() . '/template-parts/buttons/button.php';
 
-function set_default_template_for_oplaty($post_id, $post, $update)
-{
-	if ($post->post_type == 'page' && $post->post_title == 'Opłaty') {
-		update_post_meta($post_id, '_wp_page_template', 'page-oplaty.php');
-	}
-}
-add_action('save_post', 'set_default_template_for_oplaty', 10, 3);
 function my_theme_enqueue_styles()
 {
 	wp_enqueue_style('my-theme-style', get_stylesheet_uri());
@@ -47,8 +44,3 @@ function my_theme_enqueue_styles()
 	wp_enqueue_style('custom-style', get_template_directory_uri() . '/style/style.css');
 	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap', array(), null);
 }
-
-require get_template_directory() . '/inc/enqueue-scripts.php';
-require get_template_directory() . '/inc/custom-header.php';
-require get_template_directory() . '/inc/customizer.php';
-require get_template_directory() . '/inc/shortcodes.php';

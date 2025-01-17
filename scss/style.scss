@@ -12,6 +12,7 @@
 @import 'contact/contact-text';
 @import 'hero/hero';
 @import 'text-blocks/text-blocks';
+@import 'text-list-blocks/text-list-blocks';
 
 body {
   background-color: $primary;
@@ -51,7 +52,6 @@ s,
 samp,
 small,
 strike,
-strong,
 sub,
 sup,
 tt,
@@ -121,10 +121,6 @@ section {
 }
 body {
   line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
 }
 blockquote,
 q {
